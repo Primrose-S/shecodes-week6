@@ -1,0 +1,171 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colour your life</title>
+    <style>
+        body{
+            background-color:rgb(17, 1, 1);
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 50px;
+            font-style: italic;
+        }
+        h2{
+            text-align: center;
+            font-style: italic;
+        }
+        img{
+            max-width: 300px;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+            
+           
+
+        }
+        p{
+            text-align: center;
+            font-style: oblique;
+
+        }
+        a{
+            
+            display: block;
+            font-size: medium;
+        }
+        button{
+            display: block;
+            margin: auto;
+            padding: 10px 15px;
+            font-size: 14px;
+            background-color: rgb(192, 15, 139);
+            color: antiquewhite;
+            border-radius: 15px;
+        transition: all 150ms ease-in-out;
+
+        }
+        button:hover{
+            background-color: rgb(119, 8, 82);
+            cursor: pointer;
+            color: rgb(182, 8, 8);
+        }
+        .container{
+            background-color: azure;
+            max-width: 850px;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+        footer{
+            text-align: center;
+            font-size: 15px;
+            text-decoration:underline;
+            color: white;
+            padding: 20px;
+        }
+        .theme{
+            background-color:black ;
+            color: brown;
+            transition: all 160ms ease-in-out;
+        }
+        .theme:hover{
+            background-color: rgb(88, 4, 4);
+            color: #000;
+            cursor: pointer;
+        }
+        .flowers_intro{
+            border-radius: 15%;
+            transition: all 150ms ease-in-out;
+            width: 100%;    
+        }
+        .flowers_intro:hover{
+            filter: contrast(50%);
+            transform: scale(1.6);
+        }
+        .grid{
+            margin: 10px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            
+        }
+        .grid img{
+          
+            width: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: all 130ms ease-in-out;
+            aspect-ratio: 1/1;
+        }
+        .grid img:hover{
+        transform: scale(2);
+        }
+        .dark-theme{
+            background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: rgb(19, 0, 0);
+        }
+        .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .dark a {
+        color: plum;
+      }
+    </style>
+</head>
+<body>
+    <button class="theme">dark theme</button>
+    <div class="container">
+        <h1>flowers </h1>
+        <h2>welcome to my garden</h2>
+<a href="https://www.shecodes.io/uploads" target="_blank">
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/246/original/Rosa-chinensis-Plant-benefits-care-and-maintenance-tips.jpg?1720908822" alt="" class="flowers_intro"/>
+
+</a>
+<div class="grid">
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/211/original/licensed-image.jfif?1720898042 " alt="" />
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/215/original/download_%282%29.jfif?1720898515
+" alt="">
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/216/original/pansies-purple-flower-viola-pixabay_11872.jpg?1720898526" alt="" />
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/211/original/licensed-image.jfif?1720898042" alt=""/>
+ <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/210/original/220px-Prole%C4%87no_cve%C4%87e_3.jfif?1720898029" alt=""/>
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/217/original/download_%281%29.jfif?1720898540" alt="">
+</div>
+<p>
+    The presence of vibrant and playful flowers can cause <br>
+     happy emotions and instantly affect our mood. Hence, flowers <br/>
+     are given when a loved one is sick. Yes, scientific research suggests ,
+     <br>that having flowers and plants around the hospital can help the patient <br>
+     recover naturally by reducing stress levels and anxiety      
+     
+     <button>
+        <a href="https://www.southsideblooms.com/how-flowers-are-important-in-our-life/" target="_blank"> learn more
+
+        </a>
+    </button> 
+    </p>
+    
+</div>
+<footer> writen by &trade; PRIMROSE SIBONGILE DUBE &copy;</footer>
+<script>
+    function changeColor(){
+        let body=document.querySelector("body");
+        if (body.classList.contains("dark")){
+            body.classList.remove("dark");
+        } else {
+            body.classList.add("dark");
+        }
+    }
+    let themeButton =document.querySelector(".theme");
+    themeButton.addEventListener("click", changeColor);
+</script>
+</body>
+</html>

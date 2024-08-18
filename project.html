@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My hobby 😍</title>
+    <style>
+        body{
+            background: linear-gradient( 68.6deg,
+            rgb(252, 165, 241) 1.8%,
+            rgb(181, 255, 255)100.5%
+
+            );
+            background-attachment: fixed;
+            background-color: khaki;
+        }
+        h1,h2{
+            text-align: center;
+
+        }
+        .container{
+            display: block;
+            margin: 0 auto;
+            max-width: 700px;
+            background-color: floralwhite;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        img{
+            max-width: 100%;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            border: 1px solid plum;
+            background-color: white;
+            font-size: 20px;
+            border-radius: 6px;
+            padding: 10px 15px;
+            transition: all 180ms ease-in-out;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: aqua;
+            
+
+        }
+        footer{
+            text-align: center;
+            margin-top: 13px;
+
+        }
+        .dark-theme{
+            background-color: navy;
+            color: white;
+            padding: 6 9px;
+            transition: all 180ms ease-in-out;
+        }
+        .dark-theme:hover{
+            background-color: brown;
+            color: blue;
+            cursor: pointer;
+
+        }
+        .hiking-intro-picture{
+            border-radius: 15px;
+            transition: all 160ms ease-in-out;
+        }
+        .hiking-intro-picture:hover{
+           filter: contrast(30%);
+            transform: scaleX(1.4);
+        }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        margin: 15px;
+    }
+    .grid img{
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+    .grid img:hover{
+        transform: scale(2);
+    }
+    p{
+        text-align: center;
+        font: 1em sans-serif;
+    }
+    .dark{
+        background-color: black;
+        color: white;
+    }
+    .dark .container{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .dark a{
+    background: linear-gradient(112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(62, 76, 119) 70.2%
+    );
+        color: red;
+    }
+    </style>
+</head>
+<body >
+    <button class="dark-theme">theme button</button>
+    <div class="container">
+    <h1>hiking</h1>
+    <h2>my favourity hobby</h2>
+    <a href="https://www.hikingsouthafrica.co.za/" target="_blank">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/502/original/Hiking-NPS-Photo-J-Tobiason_3.jpg?1720608219" alt="" 
+    class="hiking-intro-picture" />
+</a>
+<div class="grid">
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/501/original/SummerActivities_Hiking_Hero_1400x400.jfif?1720608203" alt="" >
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/500/original/Col_de_Torrent_Haute_Route_Switzerland-800px.jpg?1720608187" alt="">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/503/original/hiking-table-mountain.png?1720608235
+    " alt="">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/505/original/couple-hiking-snack.jpg?1720608415" alt="">
+</div>
+    <p>
+        Hiking is a long, vigorous walk, usually on trails or <br/> 
+        footpaths in the countryside. Walking for pleasure developed in Europe
+        <br/> during the eighteenth century. Religious pilgrimages have existed<br>
+         much longer but they involve walking long 
+        <br/>distances for a spiritual purpose associated with specific religions.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Hiking#:~:text=Hiking%20is%20a%20long%2C%20vigorous,purpose%20associated%20with%20specific%20religions." target="_blank">
+        hiking info
+
+    </a>
+    <br>
+    
+    <button>let's hike</button>
+</div>
+    <footer>
+        writen by &trade; Primrose Sibongile Dube &copy;
+    </footer>
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+            /* if (body.classList.contains("dark")){
+                body.classList.remove("dark");
+            }else {
+                body.classList.add("dark");
+            }
+           */
+          body.classList.toggle("dark");
+        } 
+
+        let themeButton = document.querySelector(".dark-theme");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+
+</body>
+</html>
